@@ -1,0 +1,15 @@
+@import '../../sassVars.scss';
+
+.skills {
+  padding-top: 10vh;
+  font-family: $mainFont;
+  height: calc(100vh - 5rem);
+  background: url('./beach.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+
+}

@@ -1,9 +1,12 @@
 import React from 'react';
+import './Contact.scss';
 
 export default class Contact extends React.Component {
   render() {
     return(
-      <div>Contact Page</div>
+      <div className='contact'>
+
+      </div>
     )
   }
 }

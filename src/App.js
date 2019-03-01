@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.scss';
 // import routes from './routes';
 import Nav from './components/Nav/Nav';
 import Home from './components/Home/Home';
@@ -22,7 +22,7 @@ class App extends Component {
     }
   }
 
-  toSelectedPage = (page) => {
+  toSelectedModal = (page) => {
     console.log(page)
     for (let prop in this.state) {
       if (prop === page) {
@@ -36,13 +36,12 @@ class App extends Component {
     const {home, about, contact, skills, projects} = this.state;
     return (
       <div className="App">
-        <Nav pageSelectFn={this.toSelectedPage}/>
-        { home ? <Home /> : 
-          about ? <About /> : 
-          contact ? <Contact /> : 
-          skills ? <Skills /> :
-          projects ? <Projects /> : null
-        }
+        <Nav modalSelectFn={this.toSelectedModal}/>
+        <div className={home ? 'modal-container show-modal' : 'modal-container hide-modal'}><Home /></div> 
+        <div className={about ? 'modal-container show-modal' : 'modal-container hide-modal'}><About /></div>
+        <div className={contact ? 'modal-container show-modal' : 'modal-container hide-modal'}><Contact /></div>
+        <div className={skills ? 'modal-container show-modal' : 'modal-container hide-modal'}><Skills /></div>
+        <div className={projects ? 'modal-container show-modal' : 'modal-container hide-modal'}><Projects /></div>
 
       </div>
     );

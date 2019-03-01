@@ -1,9 +1,12 @@
 import React from 'react';
+import './Skills.scss';
 
 export default class Skills extends React.Component {
   render() {
     return(
-      <div>Skills Page</div>
+      <div className='skills'>
+        
+      </div>
     )
   }
 }

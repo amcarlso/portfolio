@@ -10,7 +10,7 @@ export default class Home extends React.Component {
         <div className='heading'>
           <p className='first'>Hi,</p>
           <p className='second'>I'm Allen Carlson.</p>
-          <p className='second'>Full Stack Web Developer.</p>
+          <p className='second'>Full-Stack Web Developer.</p>
         </div>
         <img src={myPic} alt='allen'/>
       </div>
