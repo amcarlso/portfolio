@@ -1,25 +1,49 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+// import routes from './routes';
+import Nav from './components/Nav/Nav';
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
+import Projects from './components/Projects/Projects';
+import Skills from './components/Skills/Skills';
+import './reset.scss';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      home: true,
+      about: false,
+      skills: false,
+      projects: false,
+      contact: false
+    }
+  }
+
+  toSelectedPage = (page) => {
+    console.log(page)
+    for (let prop in this.state) {
+      if (prop === page) {
+        this.setState({[prop]: true});
+      } else this.setState({[prop]: false})
+    }
+  }
+
   render() {
+    console.log(this.state);
+    const {home, about, contact, skills, projects} = this.state;
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Nav pageSelectFn={this.toSelectedPage}/>
+        { home ? <Home /> : 
+          about ? <About /> : 
+          contact ? <Contact /> : 
+          skills ? <Skills /> :
+          projects ? <Projects /> : null
+        }
+
       </div>
     );
   }

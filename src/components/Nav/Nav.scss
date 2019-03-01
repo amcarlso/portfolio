@@ -1,0 +1,29 @@
+@import '../../sassVars.scss';
+
+.nav {
+  font-family: $mainFont;
+  width: 100vw;
+  height: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: $background-dark;
+  color: rgb(252, 252, 252);
+  > div {
+    margin-right: 2rem;
+    border: 1px solid rgb(252, 252, 252);
+    height: 2.3rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.8rem;
+    transition: all 0.4s;
+    &:hover {
+      background: rgb(252, 252, 252);
+      color: $background-dark;
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+  }
+}
