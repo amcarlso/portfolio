@@ -8,7 +8,7 @@ export default class About extends React.Component {
         <div className='about-text-cont'>
           <span>About Me:</span>
           <p>
-            I enjoy coding, working with others and spending time with my family.
+            I enjoy coding, new technologies, working with others and spending time with my family.
           </p>
           <p>
             Being outdoors during the summer, traveling to anywhere I can relax and sit on the beach and skiing are some of my favorite hobbies. Skiing, in my opinion, is the best way to step back and see life clearly.
