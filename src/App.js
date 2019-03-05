@@ -7,7 +7,7 @@ import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills';
-import './reset.scss';
+
 
 class App extends Component {
   constructor(props) {
@@ -23,7 +23,6 @@ class App extends Component {
   }
 
   toSelectedModal = (page) => {
-    console.log(page)
     for (let prop in this.state) {
       if (prop === page) {
         this.setState({[prop]: true});
@@ -32,10 +31,10 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state);
     const {home, about, contact, skills, projects} = this.state;
     return (
       <div className="App">
+        {/* {routes} */}
         <Nav modalSelectFn={this.toSelectedModal}/>
         <div className={home ? 'modal-container show-modal' : 'modal-container hide-modal'}><Home /></div> 
         <div className={about ? 'modal-container show-modal' : 'modal-container hide-modal'}><About /></div>

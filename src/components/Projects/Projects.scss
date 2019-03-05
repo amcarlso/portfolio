@@ -1,15 +1,79 @@
 @import '../../sassVars.scss';
 
 .projects {
-  padding-top: 10vh;
+  // padding-top: 10vh;
   font-family: $mainFont;
   height: calc(100vh - 5rem);
-  background: url('./tools.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  align-items: flex-start;
-
+  color: rgb(252, 252, 252);
+  .site-container {
+    background: $background-dark;
+    height: calc(100vh - 5rem);
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 2rem;
+    transition: 0.3s;
+    &:hover {
+      background: rgb(86, 86, 86);
+    }
+    .title {
+      font-size: 2.5rem;
+      margin: 1rem; 
+    }
+    .carousel {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .destination-buttons {
+        height: 3rem;
+        width: 3rem;
+        border: 1px solid rgb(252, 252, 252);
+        border-radius: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0.2rem;
+        cursor: pointer;
+        transition: 0.4s;
+        &:hover {
+          background: rgb(252, 252, 252);
+          color: $background-dark;
+          cursor: pointer;
+        }
+      }
+      .pic {
+        height: 19rem;
+        transition: 2s;
+      }
+    }
+    .site-info {
+      display: flex;
+      margin: 0.5rem 0;
+      .link {
+        text-decoration: none;
+        color: rgb(252, 252, 252);
+        margin-left: 0.8rem; 
+        transition: 0.3s;
+        &:hover {
+          color: rgb(218, 217, 217);
+        }
+      }
+    }
+    .explanation {
+      width: 45vw;
+      height: 10rem;
+      li {
+        margin: 0.8rem 0;
+      }
+      // background: white;
+    }
+  }
+  .cramify {
+    background: lightblue;
+    height: calc(100vh - 5rem);
+    width: 50vw;
+  }
 }

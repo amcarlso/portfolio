@@ -1,13 +1,124 @@
 @import '../../sassVars.scss';
 
 .contact {
+  width: 100%;
   padding-top: 10vh;
   font-family: $mainFont;
   height: calc(100vh - 5rem);
   background: linear-gradient(to bottom, $background-dark, rgb(128, 128, 128));
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-items: flex-start;
-
+  .contact-details {
+    display: flex;
+    align-items: center;
+    img {
+      height: 25px;
+      margin: 0.5rem;
+      transition: 1s;
+      &:hover {
+        cursor: pointer;
+        transform: rotateX(360deg) scale(1.3);
+      }
+    }
+    #email-address {
+      opacity: 0;
+      pointer-events: none;
+      transition: 1s;
+    }
+    #email-logo {
+      cursor: initial;
+    }
+    #email-logo:hover + #email-address {
+      opacity: 1;
+    }
+  }
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 40vh;
+    width: 40vw;
+    background: rgb(236, 236, 236);
+    border-radius: 0.5rem;
+    margin-bottom: 5rem;
+    .name-phone {
+      display: flex;
+      flex-direction: row;
+      input {
+        font-family: $mainFont;
+        border: none;
+        color: $background-dark;
+        background: transparent;
+        border-bottom: 1px solid $background-dark;
+        border-radius: 0.3rem; 
+        margin: 2rem;
+        transition: 0.4s;
+        width: 11rem;
+        height: 1.8rem;
+        &:hover {
+          background: rgb(218, 217, 217);
+          padding: 0 0.5rem;
+        }
+        // text-align: center;
+      }
+    }
+  
+    .medium-input {
+      // text-align: center;
+      width: 26rem;
+      height: 2rem;
+      font-family: $mainFont;
+      border: none;
+      color: $background-dark;
+      background: transparent;
+      border-bottom: 1px solid $background-dark;
+      border-radius: 0.3rem;
+      transition: 0.4s;
+      &:hover {
+        background: rgb(218, 217, 217);
+        padding: 0 0.5rem;
+      }
+    }
+  
+    .large-input {
+      width: 26rem;
+      height: 4rem;
+      margin: 2rem;
+      border: none;
+      border-bottom: 1px solid $background-dark;
+      border-radius: 0.3rem;
+      font-family: $mainFont;
+      background: transparent;
+      transition: 0.4s;
+      &:hover {
+        background: rgb(218, 217, 217);
+        padding: 0 0.5rem;
+      }
+      // height: 26rem;
+    }
+    .send-button {
+      height: 2.5rem;
+      width: 5rem;
+      border: 1px solid $background-dark;
+      display: flex;
+      height: 2.3rem;
+      width: 6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0.8rem;
+      transition: all 0.4s;
+      margin-bottom: 1rem;
+      &:hover {
+        background: $background-dark;
+        color: rgb(252, 252, 252);
+        transform: scale(1.05);
+        cursor: pointer;
+      }
+    }
+  }
 }
+

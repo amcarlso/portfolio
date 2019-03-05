@@ -1,15 +1,46 @@
 @import '../../sassVars.scss';
 
 .skills {
-  padding-top: 10vh;
   font-family: $mainFont;
   height: calc(100vh - 5rem);
   background: url('./beach.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-items: flex-start;
-
+  overflow: auto;
+  h2  {
+    font-size: 3.5rem;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 1rem; 
+    // z-index: 50;
+  }
+  // background: fixed;
+  .content-container {
+    // height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 2rem 6rem;
+      transition: 0.6s;
+      &:hover {
+        transform: scaleX(1.1);
+      }
+      img {
+        height: 100px; 
+        margin-bottom: 0.2rem;
+      }
+      span {
+        font-weight: 605;
+      }
+    }
+  }
 }
+

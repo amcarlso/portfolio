@@ -1,6 +1,7 @@
 @import '../../sassVars.scss';
 
 .home {
+  opacity: 1;
   padding-top: 10vh;
   font-family: $mainFont;
   height: calc(100vh - 5rem);
@@ -14,7 +15,7 @@
     text-align: center;
     padding-top: 5rem;;
     p {
-      animation: showup 5s;
+      animation: showup 3.5s;
       // animation-delay: 0.5s;
       animation-iteration-count: 1;
       color: #3f87a6;
@@ -32,11 +33,24 @@
   }
   img {
     height: 60%;
-    opacity: 0.85;
+    opacity: 0.9;
     border-radius: 50%;
     transition: 0.4s;
     &:hover {
       opacity: 1;
+      // animation-name: spin;
+      // animation-duration: 4000ms;
+      // animation-iteration-count: infinite;
+      // animation-timing-function: linear;
+
+      // @keyframes spin {
+      //   from {
+      //     transform: rotateY(0deg);
+      //   }
+      //   to {
+      //     transform: rotateY(360deg);
+      //   }
+      // }
     }
   }
 }
