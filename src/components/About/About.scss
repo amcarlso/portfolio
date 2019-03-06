@@ -14,7 +14,7 @@
   .about-text-cont { 
     color: $light-color;
     width: 70vw;
-    height: 60vh;
+    height: 65vh;
     background: $background-dark;
     opacity: 1;
     display: flex;
@@ -26,7 +26,7 @@
       margin: 1rem auto;
       font-size: 3.5rem;
       font-weight: 600;
-      margin-bottom: 1rem;
+      margin-bottom: 0.8rem;
     }
     p {
       font-size: 1.4rem;
@@ -36,3 +36,49 @@
   }
 }
 
+@media (max-width: 950px) {
+  .about .about-text-cont {
+    width: 98vw;
+    span {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media (max-height: 600px) {
+  .about .about-text-cont {
+    line-height: 1.1rem;
+    height: 62vh;
+  }
+}
+
+@media (max-width: 650px) {
+  .about {
+    padding-top: 5vh;
+    .about-text-cont {
+      padding: 1.5rem 0.5rem;
+      span {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1rem;
+        margin-bottom: 1rem; 
+      }
+    }
+  } 
+}
+
+@media (max-width: 490px) {
+  .about .about-text-cont {
+    span {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 0.8rem;
+      margin-bottom: 0.5rem; 
+    }
+  }
+}
