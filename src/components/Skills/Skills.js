@@ -1,7 +1,6 @@
 import React from 'react';
 import './Skills.scss';
 import sass from './skills-pics/sass.png';
-import express from './skills-pics/express.png';
 import git from './skills-pics/git.png';
 import html from './skills-pics/html.png';
 import node from './skills-pics/node.png';
