@@ -123,5 +123,74 @@
 }
 
 @media (max-width: 1080px) {
-  
+  .contact {
+    .input-container {
+      width: 60vw;
+    }
+  } 
+}
+
+@media (max-width: 720px) {
+  .contact {
+    .input-container {
+      width: 80vw;
+    }
+  } 
+}
+
+@media (max-width: 545px) {
+  .contact {
+    .input-container {
+      width: 95vw;
+    }
+  } 
+}
+
+@media (max-width: 445px) {
+  .contact .input-container {
+    .name-phone {
+      input {
+        margin:  2rem 1rem;
+        width: 9rem;
+      }
+    }
+    .medium-input {
+      width: 20rem;
+    }
+    .large-input {
+      width: 20rem;
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .contact {
+    .contact-details {
+      img {
+        height: 22px;
+        margin: 0.5rem 0.3rem;
+        &:hover {
+          cursor: pointer;
+          transform: rotateX(360deg) scale(1.2);
+        }
+      }
+      p {
+        font-size: 0.9rem;
+      }
+    }
+    .input-container {
+      .name-phone {
+        input {
+          margin:  2rem 0.5rem;
+          width: 8rem;
+        }
+      }
+      .medium-input {
+        width: 17rem;
+      }
+      .large-input {
+        width: 17rem;
+      }
+    }
+  } 
 }
