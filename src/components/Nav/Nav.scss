@@ -27,3 +27,27 @@
     }
   }
 }
+
+@media (max-width: 650px) {
+  .nav > div {
+    margin-right: 1rem;
+    width: 5rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 485px) {
+  .nav > div {
+    margin-right: 0.5rem;
+    width: 4rem;
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 365px) {
+  .nav > div {
+    margin-right: 0.45rem;
+    width: 3.5rem;
+    font-size: 0.6rem;
+  }
+}

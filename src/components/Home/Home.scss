@@ -26,7 +26,7 @@
       transition: color 1s, transform 1s;
       &:hover {
         transition: 1s;
-        transform: scale(1.05);
+        transform: scale(1.04);
         color: $light-color;
       }
     }
@@ -38,34 +38,21 @@
     transition: 0.4s;
     &:hover {
       opacity: 1;
-      // animation-name: spin;
-      // animation-duration: 4000ms;
-      // animation-iteration-count: infinite;
-      // animation-timing-function: linear;
-
-      // @keyframes spin {
-      //   from {
-      //     transform: rotateY(0deg);
-      //   }
-      //   to {
-      //     transform: rotateY(360deg);
-      //   }
-      // }
     }
   }
 }
 
-@keyframes showup {
-  // from {
-  //   display: none;
-  //   opacity: 0;
-  //   color: white;
-  // }
+// @keyframes showup {
+//   // from {
+//   //   display: none;
+//   //   opacity: 0;
+//   //   color: white;
+//   // }
 
-  // to {
-  //   display: initial;
-  //   opacity: 1;
-  // }
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
+//   // to {
+//   //   display: initial;
+//   //   opacity: 1;
+//   // }
+//   0% {opacity:0;}
+//   100% {opacity:1;}
+// }
