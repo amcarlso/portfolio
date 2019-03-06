@@ -78,11 +78,11 @@ export default class Projects extends React.Component {
           </div>
           <div className='site-info'>
           <p>Live Site:</p>
-          <a className='link' href='https://hmrxhr.com'>https://hmrxhr.com</a>
+          <a target='_blank' rel='noopener noreferrer' className='link' href='https://hmrxhr.com'>https://hmrxhr.com</a>
           </div>
           <div className='github-info'>
             <p>GitHub Repository:</p>
-            <a className='link' href='https://github.com/amcarlso/hmrx'>https://github.com/amcarlso/hmrx</a>
+            <a target='_blank' rel='noopener noreferrer' className='link' href='https://github.com/amcarlso/hmrx'>https://github.com/amcarlso/hmrx</a>
           </div>
           <div className='explanation'>
             <li>DevMountain Personal Project</li>
@@ -99,11 +99,11 @@ export default class Projects extends React.Component {
           </div>
           <div className='site-info'>
           <p>Live Site:</p>
-          <a className='link' href='https://cramify.net'>https://cramify.net</a>
+          <a target='_blank' rel='noopener noreferrer' className='link' href='https://cramify.net'>https://cramify.net</a>
           </div>
           <div className='github-info'>
             <p>GitHub Repository:</p>
-            <a className='link' href='https://github.com/Cramify/cramify'>https://github.com/Cramify/cramify</a>
+            <a target='_blank' rel='noopener noreferrer' className='link' href='https://github.com/Cramify/cramify'>https://github.com/Cramify/cramify</a>
           </div>
           <div className='explanation'>
             <li>DevMountain Group Project</li>
