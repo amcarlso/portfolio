@@ -9,6 +9,7 @@ import react from './skills-pics/react.png';
 import redux from './skills-pics/redux.png';
 import socket from './skills-pics/socket.png';
 import css from './skills-pics/css.png';
+import javascript from './skills-pics/javascript.png';
 // import Nav from '../Nav/Nav';
 
 export default class Skills extends React.Component {
@@ -19,16 +20,12 @@ export default class Skills extends React.Component {
         <h2>Skills</h2>
         <div className='content-container'>
           <div>
-            <img  src={sass} alt='sass'/>
-            <span>Sass</span>
+            <img  src={react} alt='react'/>
+            <span>React</span>
           </div>
           <div>
-            <img  src={express} alt='express'/>
-            <span>Express.js</span>
-          </div>
-          <div>
-            <img  src={git} alt='git'/>
-            <span>Git</span>
+            <img  src={javascript} alt='javascript'/>
+            <span>JavScript</span>
           </div>
           <div>
             <img  src={css} alt='css'/>
@@ -39,16 +36,20 @@ export default class Skills extends React.Component {
             <span>HTML</span>
           </div>
           <div>
+            <img  src={redux} alt='redux'/>
+            <span>Redux</span>
+          </div>
+          <div>
+            <img  src={sass} alt='sass'/>
+            <span>Sass</span>
+          </div>
+          <div>
             <img  src={node} alt='node'/>
             <span>Node.js</span>
           </div>
           <div>
-            <img  src={react} alt='react'/>
-            <span>React</span>
-          </div>
-          <div>
-            <img  src={redux} alt='redux'/>
-            <span>Redux</span>
+            <img  src={git} alt='git'/>
+            <span>Git</span>
           </div>
           <div>
             <img  src={socket} alt='socket'/>
