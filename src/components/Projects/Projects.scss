@@ -6,8 +6,10 @@
   height: calc(100vh - 5rem);
   display: flex;
   color: rgb(252, 252, 252);
+  background: $background-dark;
+  background-attachment: fixed;
   .site-container {
-    background: $background-dark;
+    
     height: calc(100vh - 5rem);
     width: 50vw;
     display: flex;
@@ -62,6 +64,19 @@
         }
       }
     }
+    .github-info {
+      display: flex;
+      margin: 0.5rem 0;
+      .link {
+        text-decoration: none;
+        color: rgb(252, 252, 252);
+        margin-left: 0.8rem; 
+        transition: 0.3s;
+        &:hover {
+          color: rgb(218, 217, 217);
+        }
+      }
+    }
     .explanation {
       padding-left: 0.7rem;
       width: 45vw;
@@ -69,12 +84,93 @@
       li {
         margin: 0.8rem 0;
       }
-      // background: white;
     }
   }
-  .cramify {
-    background: lightblue;
-    height: calc(100vh - 5rem);
-    width: 50vw;
+}
+
+@media (max-width: 1060px) {
+  .projects {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: auto;
+    .site-container {
+      height: 76vh;   
+      width: 50vw;
+      padding: 0;
+      margin: 0 0.1rem;
+      .carousel {
+        .pic {
+          height: 15rem; 
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .projects .site-container {
+    width: 90vw;
+    border-right: 1px solid rgb(218, 217, 217);
+    border-left: 1px solid rgb(218, 217, 217);
+    .explanation {
+      width: 80vw;  
+    }
+  }
+}
+
+@media (max-width: 495px) {
+  .projects .site-container {
+    .carousel {
+      .destination-buttons {
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 1.25rem;
+        font-size: 0.7rem;
+      }
+      .pic {
+        height: 12rem;
+      }
+    }
+    .site-info {
+      font-size: 0.8rem;
+    }
+    .github-info {
+      font-size: 0.8rem;
+    }
+    .explanation {
+      font-size: 0.8rem;
+    }
+  } 
+}
+
+@media (max-width: 405px) {
+  .projects .site-container {
+    .carousel {
+      .destination-buttons {
+        height: 2rem;
+        width: 2rem;
+        border-radius: 1rem;
+        font-size: 0.6rem;
+      }
+      .pic {
+        height: 9rem;
+      }
+    } 
+    .site-info {
+      font-size: 0.6rem;
+      .link {
+        margin: 0.1rem;
+      }
+    }
+    .github-info {
+      font-size: 0.6rem;
+      .link {
+        margin: 0.1rem;
+      }
+    }
+    .explanation {
+      font-size: 0.6rem;
+    }
   }
 }

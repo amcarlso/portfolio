@@ -94,7 +94,7 @@ export default class Projects extends React.Component {
           <p>Live Site:</p>
           <a className='link' href='https://hmrxhr.com'>https://hmrxhr.com</a>
           </div>
-          <div className='site-info'>
+          <div className='github-info'>
             <p>GitHub Repository:</p>
             <a className='link' href='https://github.com/amcarlso/hmrx'>https://github.com/amcarlso/hmrx</a>
           </div>
@@ -115,7 +115,7 @@ export default class Projects extends React.Component {
           <p>Live Site:</p>
           <a className='link' href='https://cramify.net'>https://cramify.net</a>
           </div>
-          <div className='site-info'>
+          <div className='github-info'>
             <p>GitHub Repository:</p>
             <a className='link' href='https://github.com/Cramify/cramify'>https://github.com/Cramify/cramify</a>
           </div>
