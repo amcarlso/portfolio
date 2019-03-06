@@ -69,20 +69,6 @@ export default class Projects extends React.Component {
     const {hmrxCarousel, cramifyCarousel} = this.state;
     return(
       <div className='projects'>
-        {/* <Carousel autoPlay>
-          <div>
-            <img src={hmrxHome}/>
-            <p className='legend'>Home</p>
-          </div>
-          <div>
-            <img src={hmrxDash}/>
-            <p className='legend'>Dashboard</p>
-          </div>
-          <div>
-            <img src={hmrxClock}/>
-            <p className='legend'>Time Clock</p>
-          </div>
-        </Carousel> */}
         <div className='site-container'>
           <h1 className='title'>HMRX</h1>
           <div className='carousel'>
